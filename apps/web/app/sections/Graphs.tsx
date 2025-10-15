@@ -209,14 +209,14 @@ export function Graphs({ data, loading }: { data?: any[]; loading?: boolean }) {
                     height={30}
                     stroke="var(--chart-1)"
                     fill="var(--muted)"             
-                    traveller={({
+                    traveller={(({
                         style: {
                         border: `2px solid var(--primary-500)`, 
                         backgroundColor: "var(--primary-100)"  
                         }
-                    } as any)}
+                    } as any))}
                     startIndex={0}
-                    endIndex={Math.min(100, filteredData.length - 1)}
+                    endIndex={Math.max(0, filteredData.length - 1)}
                     tickFormatter={(v) => `${(v / 1000).toFixed(1)}k`}
                     />
                 </AreaChart>
