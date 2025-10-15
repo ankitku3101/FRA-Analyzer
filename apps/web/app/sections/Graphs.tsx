@@ -107,16 +107,16 @@ export function Graphs({ data, loading }: { data?: any[]; loading?: boolean }) {
           <div className="flex items-center justify-between gap-4">
             <div className="flex-1">
               <CardTitle className="text-base font-medium mb-0">
-                Sample Data in Use
+                Current Data in Use
               </CardTitle>
               <CardDescription className="mt-1 text-sm">
-                This chart uses a sample dataset (<code>data.csv</code>) for demonstration.
+                This chart below uses a sample dataset (<code>data.csv</code>) for demonstration. <span className="text-primary">Upload a file to see your own data.</span>
               </CardDescription>
             </div>
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline" size="sm" className="ml-2">
-                  View Data
+                  View Sample Data
                 </Button>
               </DialogTrigger>
               <DialogContent className="max-w-2xl p-0">
